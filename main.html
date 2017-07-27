@@ -16,31 +16,36 @@
 <body>
   <header>
     <div class="flex-header">
-      <h1 id="logo"><a href="#" id="links">UGUR</a></h1>
+      <h1 id="logo"><a href="#home" id="links">UGUR</a></h1>
       <ul>
-        <li><a href="#" id="links">About</a></li>
-        <li><a href="#" id="links">Projects</a></li>
-        <li><a href="#" id="links">Contact</a></li>
+        <li><a href="#projects" id="links">Projects</a></li>
+        <li><a href="#about" id="links">About</a></li>
+        <li><a href="#contact" id="links">Contact</a></li>
       </ul>
     </div>
   </header>
   <!--SECTION-->
-  <section class="home">
+  <section class="home" id="home">
     <section class="flex-intro">
       <h1>Ugur Armagan</h1>
       <h2>Chicago-based Web Developer</h2>
       <div class="buttons">
-        <button type="button" name="resume">RESUME</button>
-        <button type="button" name="github">GITHUB</button>
+        <form method="post" action="resume/mainresumepdf.pdf" target="_blank">
+          <button type="submit">RESUME</button>
+        </form>
+        <form method="post" action="https://github.com/Uarmagan" target="_blank">
+          <button type="submit">GITHUB</button>
+        </form>
       </div>
     </section>
     <section class="arrow">
-      <a href="#" id="links">FIND OUT MORE</a>
-      <a href="#" id="links">⇊</a>
+      <a href="#about" id="links">FIND OUT MORE</a>
+      <a href="#about" id="links">⇊</a>
     </section>
   </section>
-  <section class="projects">
+  <section class="projects" id="projects">
     <div class="section-name">
+      <h1 class="offset"></h1>
       <h1>PROJECTS</h1>
     </div>
     <section class="flex-projects">
@@ -51,7 +56,8 @@
     </section>
   </section>
   <!--ABOUT-->
-  <section class="about">
+  <section class="about" id="about">
+    <h1 class="offset"></h1>
     <h1>ABOUT ME</h1>
     <section class="about-flex">
       <h2>Who Am I?</h2>
@@ -67,10 +73,13 @@
     </section>
   </section>
 
-  <section class="contact">
-    <h1>Contact info</h1>
+  <section class="contact" id="contact">
+    <h1>Contact</h1>
     <section class="contact-flex">
-
+      <h2>Let's Chat..</h2>
+      <a href="https://www.linkedin.com/in/ugur-armagan/" class="links"><span class="fa fa-linkedin"> : linkedin.com/in/ugur-armagan/</span></a>
+      <a href="mailto:ugurarmagan93@gmail.com" target="_top" class="links"><span class="fa fa-envelope"> : ugurarmagan93@gmail.com</span></a>
+      <a href="https://github.com/Uarmagan" class="links"><span class="fa fa-github"> : https://github.com/Uarmagan</span></a>
     </section>
   </section>
 
