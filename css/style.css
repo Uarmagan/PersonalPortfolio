@@ -30,7 +30,7 @@ header {
   width: 100%;
   color: #0a1612;
   font-family: 'Armata';
-    position:fixed;
+  position: fixed;
 }
 
 #logo {
@@ -66,17 +66,19 @@ section {
 }
 
 .home {
-  height: 550px;
+  height: 600px;
   width: 100%;
   background: linear-gradient(to bottom right, #0a1612, #141B23);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .flex-intro {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 80%;
+  margin-top: auto;
   text-align: center;
 }
 
@@ -87,6 +89,7 @@ section {
   padding-bottom: 12px;
   margin-bottom: 12px;
   letter-spacing: 2px;
+  text-shadow: 6px 6px 12px black;
 }
 
 .flex-intro h2 {
@@ -95,15 +98,33 @@ section {
   font-size: 18px;
 }
 
+.buttons {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.buttons button {
+  background-color: #c5c1c0;
+  font-size: 45px;
+  border-style: none;
+  margin: 40px 40px;
+  background: linear-gradient(to top, #c5c1c0, #7f7f7f);
+  border: 1px solid white;
+  box-shadow: 8px 8px 12px;
+  border-radius: 4px;
+}
+
 .arrow {
   color: white;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  height: 20%;
-  font-size: 20px;
+  margin-top: auto;
+  text-align: center;
   padding-bottom: 10px;
+  font-size: 20px;
   text-shadow: 1px 1px 5px #000000;
 }
 
@@ -114,7 +135,7 @@ section {
   text-align: center;
   display: flex;
   flex-direction: column;
-  color:#0a1612;
+  color: #0a1612;
 }
 
 .projects h1 {
@@ -147,7 +168,8 @@ section {
 .flex-projects img {
   margin-bottom: 20px;
 }
-.about{
+
+.about {
   height: auto;
   width: 100%;
   padding-bottom: 50px;
@@ -156,13 +178,15 @@ section {
   display: flex;
   flex-direction: column;
 }
-.about h1{
+
+.about h1 {
   font-size: 40px;
   font-weight: 600;
   border-bottom: 2px solid white;
   margin: 40px auto 0px;
 }
-.about-flex{
+
+.about-flex {
   width: 65%;
   display: flex;
   flex-direction: column;
@@ -170,9 +194,24 @@ section {
   text-align: center;
   margin: 0 auto;
 }
-.about-flex h2{
+
+.about-flex h2 {
   margin-bottom: 24px;
   margin-top: 55px;
   font-size: 22px;
-
+}
+.contact {
+  height: auto;
+  width: 100%;
+  padding-bottom: 50px;
+  background-color: #0a1612;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.contact h1 {
+  font-size: 40px;
+  font-weight: 600;
+  border-bottom: 2px solid white;
+  margin: 40px auto 0px;
 }
